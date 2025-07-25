@@ -68,6 +68,10 @@ button {
   flex-direction: column;
 }
 
+.tablet {
+  display: none;
+}
+
 .text-preset-1 {
   color: $color-slate-900;
   font-size: 2.5rem;
@@ -269,8 +273,16 @@ button {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 660px) {
   // --- Utility Classes ---
+  .mobile {
+    display: none;
+  }
+
+  .tablet {
+    display: block;
+  }
+
   .text-preset-1 {
     font-size: 3rem;
   }
@@ -289,7 +301,7 @@ button {
 
     .hero-group {
       height: 303px;
-      gap: 32px;
+      overflow-y: hidden;
     }
 
     .text-content {

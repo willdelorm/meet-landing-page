@@ -44,6 +44,10 @@ button {
   flex-direction: column;
 }
 
+.tablet {
+  display: none;
+}
+
 .text-preset-1 {
   color: hsl(240, 21%, 20%);
   font-size: 2.5rem;
@@ -220,7 +224,13 @@ button {
   text-decoration: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 660px) {
+  .mobile {
+    display: none;
+  }
+  .tablet {
+    display: block;
+  }
   .text-preset-1 {
     font-size: 3rem;
   }
@@ -235,7 +245,7 @@ button {
   }
   .hero-container .hero-group {
     height: 303px;
-    gap: 32px;
+    overflow-y: hidden;
   }
   .hero-container .text-content {
     padding-bottom: 4em;
