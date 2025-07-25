@@ -87,6 +87,10 @@ button {
   color: hsl(192, 90%, 77%);
 }
 
+.text-white {
+  color: hsl(0, 0%, 98%);
+}
+
 .nav {
   padding-top: 3em;
 }
@@ -99,18 +103,25 @@ button {
   display: flex;
   flex-direction: column;
   gap: 3em;
-  padding: 4em 2em 2em;
+  padding-top: 4em;
 }
 .hero-container .hero-group {
   height: 160px;
   display: flex;
   justify-content: center;
   gap: 17px;
+  overflow-x: hidden;
+}
+.hero-container .hero-group img {
+  flex: 1;
+  height: 100%;
+  object-fit: cover;
 }
 .hero-container .text-content {
   display: flex;
   flex-direction: column;
   gap: 1.5em;
+  padding: 0 2em 2em;
 }
 .hero-container .text-content .btn-group {
   display: flex;
@@ -170,6 +181,11 @@ button {
   display: flex;
   flex-direction: column;
 }
+.footer .number-img {
+  z-index: 10;
+  position: relative;
+  top: 28px;
+}
 .footer .hero {
   background: url("./assets/mobile/image-footer.jpg");
   background-position: center;
@@ -185,7 +201,7 @@ button {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(77, 150, 168, 0.8);
+  background-color: rgba(77, 150, 168, 0.9);
 }
 .footer .hero .content {
   display: flex;
@@ -194,6 +210,16 @@ button {
   gap: 1.5em;
   z-index: 10;
   color: hsl(0, 0%, 98%);
+}
+
+.attribution {
+  font-size: 0.8em;
+  line-height: 1.5;
+}
+.attribution a {
+  color: hsl(192, 90%, 77%);
+  font-weight: 900;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 769px) {

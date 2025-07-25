@@ -112,6 +112,10 @@ button {
   color: $color-cyan-300;
 }
 
+.text-white {
+  color: $color-white;
+}
+
 .nav {
   padding-top: 3em;
 
@@ -126,7 +130,7 @@ button {
   flex-direction: column;
   gap: 3em;
 
-  padding: 4em 2em 2em;
+  padding-top: 4em;
 
   .hero-group {
     height: 160px;
@@ -134,13 +138,21 @@ button {
     display: flex;
     justify-content: center;
     gap: 17px;
+    overflow-x: hidden;
+
+    img {
+      flex: 1;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   .text-content {
     display: flex;
     flex-direction: column;
     gap: 1.5em;
-
+    padding: 0 2em 2em;
+    
     .btn-group {
       display: flex;
       align-items: center;
@@ -175,40 +187,45 @@ button {
 
     .title {
       display: flex;
-    flex-direction: column;
-    gap: 1em;
+      flex-direction: column;
+      gap: 1em;
     }
   }
 }
 
 .number-img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    .vertical-line {
-      width: 1px;
-      height: 80px;
-      background-color: $color-slate-300;
-    }
-
-    .number-circle {
-      width: 56px;
-      height: 56px;
-      background-color: $color-white;
-      border: 1px solid $color-slate-300;
-      border-radius: 100%;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+  .vertical-line {
+    width: 1px;
+    height: 80px;
+    background-color: $color-slate-300;
   }
+
+  .number-circle {
+    width: 56px;
+    height: 56px;
+    background-color: $color-white;
+    border: 1px solid $color-slate-300;
+    border-radius: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 .footer {
   display: flex;
   flex-direction: column;
-  // gap: -28px;
+
+  .number-img {
+    z-index: 10;
+    position: relative;
+    top: 28px;
+  }
 
   .hero {
     background: url("./assets/mobile/image-footer.jpg");
@@ -218,28 +235,37 @@ button {
     padding: 4em 2em;
 
     display: flex;
-    // flex-direction: column;
-    // gap: 1.5em;
     position: relative;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       bottom: 0;
       left: 0;
       right: 0;
-      background-color: rgba(77, 150, 168, 80%);
+      background-color: rgba(77, 150, 168, 90%);
     }
 
     .content {
       display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5em;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5em;
       z-index: 10;
       color: $color-white;
     }
+  }
+}
+
+.attribution {
+  font-size: 0.8em;
+  line-height: 1.5;
+
+  a {
+    color: $color-cyan-300;
+    font-weight: $font-black;
+    text-decoration: none;
   }
 }
 
