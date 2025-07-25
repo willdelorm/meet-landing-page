@@ -126,6 +126,8 @@ button {
 .hero-container .text-content {
   gap: 1.5em;
   padding: 0 2em 2em;
+  max-width: 450px;
+  margin: auto;
 }
 .hero-container .text-content .btn-group {
   align-items: center;
@@ -147,9 +149,13 @@ button {
 }
 .main-content .text-content {
   gap: 2em;
+  max-width: 500px;
+  margin: auto;
 }
 .main-content .text-content .title {
   gap: 1em;
+  max-width: 450px;
+  margin: auto;
 }
 
 .number-img {
@@ -192,6 +198,8 @@ button {
   background-color: rgba(77, 150, 168, 0.9);
 }
 .footer .hero .content {
+  max-width: 500px;
+  margin: auto;
   align-items: center;
   gap: 1.5em;
   z-index: 10;
@@ -206,6 +214,38 @@ button {
   color: hsl(192, 90%, 77%);
   font-weight: 900;
   text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .text-preset-1 {
+    font-size: 3rem;
+  }
+  .text-preset-2 {
+    font-size: 2.25rem;
+  }
+  .text-preset-3 {
+    font-size: 0.875rem;
+  }
+  .hero-container {
+    gap: 4.5em;
+  }
+  .hero-container .hero-group {
+    height: 303px;
+    gap: 32px;
+  }
+  .hero-container .text-content {
+    padding-bottom: 4em;
+  }
+  .hero-container .text-content .btn-group {
+    flex-direction: row;
+  }
+  .main-content {
+    padding-top: 3.5em;
+  }
+  .main-content .img-collage {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
