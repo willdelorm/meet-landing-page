@@ -96,6 +96,10 @@ button {
   color: hsl(192, 90%, 77%);
 }
 
+.text-purple-300 {
+  color: hsl(268, 100%, 86%);
+}
+
 .text-white {
   color: hsl(0, 0%, 98%);
 }
