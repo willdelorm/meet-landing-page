@@ -35,6 +35,15 @@ button {
   border-radius: 29px;
 }
 
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
 .text-preset-1 {
   color: hsl(240, 21%, 20%);
   font-size: 2.5rem;
@@ -100,14 +109,11 @@ button {
 }
 
 .hero-container {
-  display: flex;
-  flex-direction: column;
   gap: 3em;
   padding-top: 4em;
 }
 .hero-container .hero-group {
   height: 160px;
-  display: flex;
   justify-content: center;
   gap: 17px;
   overflow-x: hidden;
@@ -118,21 +124,15 @@ button {
   object-fit: cover;
 }
 .hero-container .text-content {
-  display: flex;
-  flex-direction: column;
   gap: 1.5em;
   padding: 0 2em 2em;
 }
 .hero-container .text-content .btn-group {
-  display: flex;
   align-items: center;
-  flex-direction: column;
   gap: 1em;
 }
 
 .main-content {
-  display: flex;
-  flex-direction: column;
   gap: 4em;
   padding: 2em 2em 4em;
 }
@@ -146,19 +146,13 @@ button {
   border-radius: 0.5em;
 }
 .main-content .text-content {
-  display: flex;
-  flex-direction: column;
   gap: 2em;
 }
 .main-content .text-content .title {
-  display: flex;
-  flex-direction: column;
   gap: 1em;
 }
 
 .number-img {
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
 .number-img .vertical-line {
@@ -172,15 +166,10 @@ button {
   background-color: hsl(0, 0%, 98%);
   border: 1px solid hsl(240, 18%, 85%);
   border-radius: 100%;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.footer {
-  display: flex;
-  flex-direction: column;
-}
 .footer .number-img {
   z-index: 10;
   position: relative;
@@ -191,7 +180,6 @@ button {
   background-position: center;
   background-size: cover;
   padding: 4em 2em;
-  display: flex;
   position: relative;
 }
 .footer .hero::before {
@@ -204,8 +192,6 @@ button {
   background-color: rgba(77, 150, 168, 0.9);
 }
 .footer .hero .content {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 1.5em;
   z-index: 10;
@@ -220,33 +206,6 @@ button {
   color: hsl(192, 90%, 77%);
   font-weight: 900;
   text-decoration: none;
-}
-
-@media screen and (min-width: 769px) {
-  .text-preset-1 {
-    font-size: 4rem;
-    font-weight: 900;
-  }
-  .text-preset-2 {
-    font-size: 2.5rem;
-    font-weight: 900;
-  }
-  .text-preset-3 {
-    color: hsl(192, 37%, 48%);
-    font-size: 1rem;
-    font-weight: 900;
-    letter-spacing: 0.25rem;
-    text-transform: uppercase;
-  }
-  .text-preset-4 {
-    font-size: 1.125rem;
-    font-weight: 500;
-  }
-  .text-preset-5 {
-    font-size: 1rem;
-    font-weight: 900;
-    line-height: 1.5;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
