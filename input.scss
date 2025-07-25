@@ -1,0 +1,275 @@
+// Font Data
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+// Color Variables
+$color-cyan-600: hsl(192, 37%, 48%);
+$color-cyan-300: hsl(192, 90%, 77%);
+
+$color-purple-600: hsl(268, 34%, 53%);
+$color-purple-300: hsl(268, 100%, 86%);
+
+$color-slate-900: hsl(240, 21%, 20%);
+$color-slate-600: hsl(240, 10%, 57%);
+$color-slate-300: hsl(240, 18%, 85%);
+
+$color-white: hsl(0, 0%, 98%);
+
+$font-sans: "Red Hat Display", sans-serif;
+$font-medium: 500;
+$font-black: 900;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  width: 100vw;
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: auto;
+
+  font-family: $font-sans;
+  font-weight: $font-medium;
+  letter-spacing: 0;
+  line-height: 1.1;
+  text-align: center;
+
+  background-color: $color-white;
+  color: $color-slate-600;
+}
+
+button {
+  background-color: $color-white;
+  color: $color-slate-900;
+  cursor: pointer;
+
+  font-family: $font-sans;
+  font-size: 20px;
+
+  width: fit-content;
+  padding: 1em 2.5em;
+  border: none;
+  border-radius: 29px;
+}
+
+.text-preset-1 {
+  color: $color-slate-900;
+  font-size: 2.5rem;
+  font-weight: $font-black;
+}
+
+.text-preset-2 {
+  color: $color-slate-900;
+  font-size: 2rem;
+  font-weight: $font-black;
+}
+
+.text-preset-3 {
+  color: $color-cyan-600;
+  font-size: 0.75rem;
+  font-weight: $font-black;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+}
+
+.text-preset-4 {
+  font-size: 1rem;
+  font-weight: $font-medium;
+  line-height: 1.5;
+}
+
+.text-preset-5 {
+  font-size: 1rem;
+  font-weight: $font-black;
+  line-height: 1.5;
+}
+
+.bg-cyan-600 {
+  background-color: $color-cyan-600;
+  color: $color-white;
+
+  &:hover {
+    background-color: #71c0d4;
+  }
+}
+
+.bg-purple-600 {
+  background-color: $color-purple-600;
+  color: $color-white;
+
+  &:hover {
+    background-color: #b18bdd;
+  }
+}
+
+.text-cyan-300 {
+  color: $color-cyan-300;
+}
+
+.nav {
+  padding-top: 3em;
+
+  img {
+    display: block;
+    margin: auto;
+  }
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+
+  padding: 4em 2em 2em;
+
+  .hero-group {
+    height: 160px;
+
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+  }
+
+  .text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+
+    .btn-group {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 1em;
+    }
+  }
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+
+  padding: 2em 2em 4em;
+
+  .img-collage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+
+    img {
+      width: 100%;
+      border-radius: 0.5em;
+    }
+  }
+
+  .text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+    .title {
+      display: flex;
+    flex-direction: column;
+    gap: 1em;
+    }
+  }
+}
+
+.number-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .vertical-line {
+      width: 1px;
+      height: 80px;
+      background-color: $color-slate-300;
+    }
+
+    .number-circle {
+      width: 56px;
+      height: 56px;
+      background-color: $color-white;
+      border: 1px solid $color-slate-300;
+      border-radius: 100%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  // gap: -28px;
+
+  .hero {
+    background: url("./assets/mobile/image-footer.jpg");
+    background-position: center;
+    background-size: cover;
+
+    padding: 4em 2em;
+
+    display: flex;
+    // flex-direction: column;
+    // gap: 1.5em;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(77, 150, 168, 80%);
+    }
+
+    .content {
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+      z-index: 10;
+      color: $color-white;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .text-preset-1 {
+    font-size: 4rem;
+    font-weight: $font-black;
+  }
+
+  .text-preset-2 {
+    font-size: 2.5rem;
+    font-weight: $font-black;
+  }
+
+  .text-preset-3 {
+    color: $color-cyan-600;
+    font-size: 1rem;
+    font-weight: $font-black;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+  }
+
+  .text-preset-4 {
+    font-size: 1.125rem;
+    font-weight: $font-medium;
+  }
+
+  .text-preset-5 {
+    font-size: 1rem;
+    font-weight: $font-black;
+    line-height: 1.5;
+  }
+}
