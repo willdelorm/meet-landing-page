@@ -1,6 +1,6 @@
-# Frontend Mentor - PROJECT_NAME
+# Frontend Mentor - Meet Landing Page
 
-This is a solution to the [PROJECT_NAME challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/PROJECT_SLUG).
+This is a solution to the [Meet Landing Page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/building-responsive-layouts--z1qCXVqkD).
 
 ## Table of contents
 
@@ -12,9 +12,7 @@ This is a solution to the [PROJECT_NAME challenge on Frontend Mentor](https://ww
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -35,8 +33,8 @@ Your users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://github.com/willdelorm/REPO_NAME)
-- Live Site URL: [Github Pages](https://willdelorm.github.io/REPO_NAME)
+- Solution URL: [Github](https://github.com/willdelorm/meet-landing-page)
+- Live Site URL: [Github Pages](https://willdelorm.github.io/meet-landing-page)
 
 ## My process
 
@@ -50,13 +48,13 @@ Your users should be able to:
 
 ### What I learned
 
+Loved that this was a bigger project compared to previous Frontend Mentor challenges! This landing page really stretched my brain to make elements flow smoothly between different breakpoints.
+
 ### Continued development
 
-### Useful resources
+Nearly 400 lines of styling code later, I feel there is a balance to optimizing my code so I don't need to make as many adjustments for each breakpoint. Looking forward, I would like to plan responsiveness ahead of time instead of making multiple passes per breakpoint.
 
 ## Author
 
 - Website - [Will Delorm](https://willdelorm.com)
 - Frontend Mentor - [@willdelorm](https://www.frontendmentor.io/profile/willdelorm)
-
-## Acknowledgements
