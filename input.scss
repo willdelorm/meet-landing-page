@@ -30,7 +30,7 @@ html {
 
 body {
   width: 100vw;
-  max-width: 1200px;
+  // max-width: 1200px;
   min-height: 100vh;
   margin: auto;
 
@@ -52,7 +52,7 @@ button {
   font-family: $font-sans;
   font-size: 20px;
 
-  width: fit-content;
+  width: max-content;
   padding: 1em 2.5em;
   border: none;
   border-radius: 29px;
@@ -68,7 +68,8 @@ button {
   flex-direction: column;
 }
 
-.tablet {
+.tablet,
+.desktop {
   display: none;
 }
 
@@ -144,6 +145,11 @@ button {
   }
 }
 
+main {
+  max-width: 1200px;
+  margin: auto;
+}
+
 .hero-container {
   gap: 3em;
   padding-top: 4em;
@@ -165,8 +171,6 @@ button {
   .text-content {
     gap: 1.5em;
     padding: 0 2em 2em;
-    max-width: 450px;
-    margin: auto;
 
     .btn-group {
       align-items: center;
@@ -199,7 +203,7 @@ button {
     .title {
       gap: 1em;
       max-width: 450px;
-    margin: auto;
+      margin: auto;
     }
   }
 }
@@ -280,7 +284,7 @@ button {
   }
 
   .tablet {
-    display: block;
+    display: flex;
   }
 
   .text-preset-1 {
@@ -306,6 +310,8 @@ button {
 
     .text-content {
       padding-bottom: 4em;
+      width: 450px;
+      margin: auto;
 
       .btn-group {
         flex-direction: row;
@@ -319,6 +325,68 @@ button {
     .img-collage {
       grid-template-columns: repeat(4, 1fr);
       gap: 1.5em;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  // --- Utility Classes ---
+  .mobile,
+  .tablet {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  .text-preset-1 {
+    font-size: 4rem;
+  }
+
+  .text-preset-2 {
+    font-size: 2.5rem;
+  }
+
+  .text-preset-3 {
+    font-size: 1rem;
+  }
+
+  .text-preset-4 {
+    font-size: 1.125rem;
+  }
+
+  .text-preset-5 {
+    font-size: 1rem;
+  }
+
+  // --- Desktop styling ---
+  .nav {
+    padding-top: 5em;
+  }
+
+  .hero-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .main-content {
+    padding: 3.5em 2em 4.5em;
+
+    .img-collage {
+      max-height: 256px;
+      width: auto;
+    }
+  }
+
+  .footer .hero .content {
+    flex-direction: row;
+    max-width: 1200px;
+    text-align: start;
+    justify-content: space-between;
+
+    * {
+      max-width: 350px;
     }
   }
 }
